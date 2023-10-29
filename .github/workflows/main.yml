@@ -17,20 +17,19 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # SVG-only version of the snake game
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: LESANF
           outputs: |
-            dist/only-svg/github-contribution-grid-snake-sonic-dark.svg?color_snake=#1A50BC&color_dots=#88C542,#FFF9E1,#FFE494,#FFD700,#FFC400
-            dist/only-svg/github-contribution-grid-snake-sonic.svg?color_snake=#1A50BC&color_dots=#88C542,#FFF9E1,#FFE494,#FFD700,#FFC400
-      
+            dist/only-svg/github-contribution-grid-snake-sonic-dark.svg?color_snake=#1A50BC&color_dots=#88C542,#FFECB3,#FFD978,#FFC63D,#FFE423
+            dist/only-svg/github-contribution-grid-snake-sonic.svg?color_snake=#1A50BC&color_dots=#88C542,#FFECB3,#FFD978,#FFC63D,#FFE423
+            
       - uses: Platane/snk@v3
         with:
           github_user_name: LESANF
           outputs: |
-            dist/docker/github-contribution-grid-snake-sonic-dark.svg?color_snake=#1A50BC&color_dots=#88C542,#FFF9E1,#FFE494,#FFD700,#FFC400
-            dist/docker/github-contribution-grid-snake-sonic.svg?color_snake=#1A50BC&color_dots=#88C542,#FFF9E1,#FFE494,#FFD700,#FFC400
+            dist/docker/github-contribution-grid-snake-sonic-dark.svg?color_snake=#1A50BC&color_dots=#88C542,#FFECB3,#FFD978,#FFC63D,#FFE423
+            dist/docker/github-contribution-grid-snake-sonic.svg?color_snake=#1A50BC&color_dots=#88C542,#FFECB3,#FFD978,#FFC63D,#FFE423
 
 
       # Ensure the generated files exist
