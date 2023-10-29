@@ -37,11 +37,11 @@ jobs:
       - name: ensure the generated file exists
         run: |
           ls dist
-          test -f dist/only-svg/github-contribution-grid-snake-kirby-dark.svg
-          test -f dist/only-svg/github-contribution-grid-snake-kirby.svg
-          test -f dist/docker/github-contribution-grid-snake-kirby-dark.svg
-          test -f dist/docker/github-contribution-grid-snake-kirby.svg
-
+          test -f dist/only-svg/github-contribution-grid-snake-sonic.svg
+          test -f dist/only-svg/github-contribution-grid-snake-sonic-dark.svg
+          test -f dist/docker/github-contribution-grid-snake-sonic.svg
+          test -f dist/docker/github-contribution-grid-snake-sonic-dark.svg
+          
       # Push the generated files to the designated branch
       - name: push github-contribution-grid-snake.svg to the output branch
         uses: crazy-max/ghaction-github-pages@v3.1.0
